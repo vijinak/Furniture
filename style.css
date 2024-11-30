@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --brown:rgb(138, 19, 19);
+}
+/* remove horizontal scroll bar */
+body{
+    overflow-x: hidden;
+} 
+#logo{
+    width: 100%;
+    height: 100px;
+}
+ul li{
+    font-size: 25px;
+}
+li i{
+    color: rgba(188, 188, 188, 0.847);
+    font-size: 45px;
+}
+#contact{
+    background-color: var(--brown);
+    color: white;
+    
+}
+#contact:hover{
+    background-color: white;
+    color: var(--brown);
+    border-color: var(--brown);
+}
+@media(min-width:992px){
+    ul{
+        display: flex;
+        align-items: center;
+    }
+}
+@media(max-width:992px){
+    li i{
+        visibility: hidden;
+    }
+}
+.main{
+    background-image: url('./Images/img2.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* to darken the image for high light the white font */
+.bg{
+    width: 100%;
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.329);
+}
+.welcome{
+    padding-top: 18%;
+    padding-left: 5%;
+}
+.welcome p{
+    color: white;
+    font-size: 35px;
+}
+.welcome h1{
+    color: white;
+    font-size: 75px;
+}
+@media (max-width:600px){
+    .welcome p{
+        padding-top: 8%;
+        font-size: 25px;
+    }
+    .welcome h1{
+        color: white;
+        font-size: 50px;
+    }
+}
+#contact_btn{
+    color: white;
+    border-color: white;
+}
+.work{
+    padding-top: 5%;
+    background-image: url('./Images/work-bg.jpg');
+}
+.work h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+.card-body h5{
+    font-size: 30px;
+}
+.view_btn{
+    color: var(--brown) !important;
+    border-color: var(--brown) !important;
+    margin-top: 5%;
+}
+.view_btn:hover{
+    color: white !important;
+    background-color: var(--brown) !important;
+}
+#about{
+    background-color: rgba(217, 214, 214, 0.642);
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+#about_img{
+    border: 7px solid var(--brown);
+    height: 400px;
+    width: 100%;
+}
+#about_img img{
+    height: 420px;
+    width: 104%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+#about h4{
+    margin-top: 8%;
+}
+#about h1{
+    color: var(--brown);
+}
+.hr{
+    width: 20%;
+    height: 7px;
+    background-color: var(--brown);
+}
+#about p{
+    text-align: justify;
+    font-size: 18px;
+    padding-right: 15px;
+}
+.pro_img_1{
+    position: relative;
+}
+.rosewood{
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+    width: 40%;
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+}
+.pro_img_2{
+    position: relative;
+    margin-bottom: 25px;
+}
+.vice{
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+    width: 50%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial{
+    margin-top: 8%;
+}
+.testimonial .people{
+    margin-left: 8%;
+}
+.testimonial img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;  
+}
+.footer{
+    background-color: rgb(53, 52, 52);
+    width: 100%;
+    /* height: 400px; */
+    margin-top: 8%;
+}
